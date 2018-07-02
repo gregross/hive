@@ -1,0 +1,52 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/jfreechart-0.9.16/src/org/jfree/chart/resources
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+JFreeChartResources.java
+file
+
+
+
+
+2007-01-03T20:47:40.177163Z
+752d71514bbf3034202af493b2d46828
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+package.html
+file
+
+
+
+
+2007-01-03T20:47:40.217220Z
+87943edbf7985c77e2ca86a741a1fb44
+2007-01-03T15:32:02.531750Z
+2
+gr
+

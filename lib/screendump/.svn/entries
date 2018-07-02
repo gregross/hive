@@ -1,0 +1,41 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/screendump
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+dump.jar
+file
+
+
+
+
+2007-01-03T20:46:39.059280Z
+40f537f00fb8e886d85ffe339c48f055
+2007-01-03T15:32:02.531750Z
+2
+gr
+has-props
+

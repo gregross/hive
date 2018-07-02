@@ -1,0 +1,5 @@
+private-data
+documentation
+.DS_Store
+/target/
+hive.iml

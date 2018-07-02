@@ -1,0 +1,68 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/source/alg/ssa
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-04T01:05:35.820044Z
+4
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+SSA_ResultsView.java
+file
+
+
+
+
+2007-01-04T00:22:01.921443Z
+2e6899bd697b73d47721a87324db742b
+2007-01-04T01:05:35.820044Z
+4
+gr
+
+java SSA
+dir
+
+SSA_DLL.dll
+file
+
+
+
+
+2007-01-03T23:28:22.732476Z
+67eff1c097182c9330dec710c6c5e423
+2007-01-03T15:32:02.531750Z
+2
+gr
+has-props
+
+msv.dat
+file
+
+
+
+
+2007-01-03T23:28:28.971448Z
+1bc268169369839a19551ab0fc8a5e18
+2007-01-03T15:32:02.531750Z
+2
+gr
+

@@ -1,0 +1,27 @@
+Hybrid Information Visualisation Environment - HIVE (05/11/2004)
+
+Copyright Greg Ross, Matthew Chalmers and the University of Glasgow.
+
+
+  Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+  The contents of this installation are subject to the Mozilla Public License Version
+  1.1 (the "License"); you may not use this file except in compliance with
+  the License. You may obtain a copy of the License at
+  http://www.mozilla.org/MPL/
+ 
+  Software distributed under the License is distributed on an "AS IS" basis,
+  WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+  for the specific language governing rights and limitations under the
+  License.
+ 
+  The Original Code is HIVE .
+ 
+  The Initial Developer of the Original Code is Greg Ross.
+
+  Portions created by the Initial Developer are Copyright (C) 2000-2004
+  the Initial Developer. All Rights Reserved.
+ 
+  Contributor(s): Greg Ross <gr@dcs.gla.ac.uk>
+ 	   Matthew Chalmers <matthew@dcs.gla.ac.uk>
+           Alistair Morrison <morrisaj@dcs.gla.ac.uk>

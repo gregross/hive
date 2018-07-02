@@ -1,0 +1,41 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/jfreechart-0.9.16/junit
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+junit.jar
+file
+
+
+
+
+2007-01-03T20:48:10.871299Z
+1f40fb782a4f2cf78f161d32670f7a3a
+2007-01-03T15:32:02.531750Z
+2
+gr
+has-props
+

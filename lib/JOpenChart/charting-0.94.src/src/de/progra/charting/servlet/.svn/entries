@@ -1,0 +1,52 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/JOpenChart/charting-0.94.src/src/de/progra/charting/servlet
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+ChartServlet.java
+file
+
+
+
+
+2007-01-03T23:29:51.219715Z
+8f676d0131aa71db413299ebd0e6977b
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+web.xml
+file
+
+
+
+
+2007-01-03T23:29:51.219715Z
+e6e837299a29bea52a6af1c4de46cc94
+2007-01-03T15:32:02.531750Z
+2
+gr
+

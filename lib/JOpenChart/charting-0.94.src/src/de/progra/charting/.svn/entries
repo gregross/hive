@@ -1,0 +1,190 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/JOpenChart/charting-0.94.src/src/de/progra/charting
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+test
+dir
+
+render
+dir
+
+Chart.java
+file
+
+
+
+
+2007-01-03T23:29:55.816324Z
+fabe6dbe85ac94cede2b08d88d1813d9
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+ChartEncoder.java
+file
+
+
+
+
+2007-01-03T23:29:55.806310Z
+871c517f690413713c18195187adfe80
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+event
+dir
+
+Axis.java
+file
+
+
+
+
+2007-01-03T23:29:55.826339Z
+0fc16830e0f052374f85a21087914475
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+servlet
+dir
+
+EncodingException.java
+file
+
+
+
+
+2007-01-03T23:29:55.836353Z
+f677d9e139b7264f2565903813521697
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+DefaultChart.java
+file
+
+
+
+
+2007-01-03T23:29:55.846368Z
+cb47ea8521801b42d0577f5cbe1ae544
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+CoordSystemUtilities.java
+file
+
+
+
+
+2007-01-03T23:29:55.856382Z
+90fa2c034f259a1f2c19fb7e16a4044b
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+swing
+dir
+
+PointToPixelTranslator.java
+file
+
+
+
+
+2007-01-03T23:29:55.866396Z
+8890763c225cfc38f7e8989ed46b5af1
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+CoordSystem.java
+file
+
+
+
+
+2007-01-03T23:29:55.876411Z
+1ea963030b289d47441f24683ceff1a2
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+model
+dir
+
+Title.java
+file
+
+
+
+
+2007-01-03T23:29:55.886425Z
+5298b08d4a499ef91ade422f45375d53
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+AbstractChart.java
+file
+
+
+
+
+2007-01-03T23:29:55.936497Z
+81282c16fb6e8b6eb3cb389b58d6bf2b
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+ChartUtilities.java
+file
+
+
+
+
+2007-01-03T23:29:55.946512Z
+619e951acf018beff199e94683eed548
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+Legend.java
+file
+
+
+
+
+2007-01-03T23:29:55.946512Z
+6eabdf4935d70956745e94137ee7e92a
+2007-01-03T15:32:02.531750Z
+2
+gr
+

@@ -1,0 +1,1 @@
+JNIEXPORT void JNICALL Java_atb_alg_SSA_doSSA(JNIEnv * env, jclass obj, jstring sFileName);

@@ -1,0 +1,105 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/jfreechart-0.9.16
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+jfreechart-0.9.15-install.pdf
+file
+
+
+
+
+2007-01-03T20:48:11.852710Z
+f640322bf9d684cf9a9f6d2760e10cb0
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+jfreechart-0.9.16.jar
+file
+
+
+
+
+2007-01-03T20:48:12.423531Z
+fa78fa8a20ac29ac7a2356a74bdacfef
+2007-01-03T15:32:02.531750Z
+2
+gr
+has-props
+
+ant
+dir
+
+jfreechart-0.9.16-demo.jar
+file
+
+
+
+
+2007-01-03T20:48:12.703934Z
+ca1ef875cb10ee1028a7b57b2a43267d
+2007-01-03T15:32:02.531750Z
+2
+gr
+has-props
+
+lib
+dir
+
+src
+dir
+
+junit
+dir
+
+README.txt
+file
+
+
+
+
+2007-01-03T20:48:12.733977Z
+a9a5a39dd53ec978866f48c994db0f23
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+licence-LGPL.txt
+file
+
+
+
+
+2007-01-03T20:48:12.764020Z
+7fbc338309ac38fefcd64b04bb903e34
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+checkstyle
+dir
+

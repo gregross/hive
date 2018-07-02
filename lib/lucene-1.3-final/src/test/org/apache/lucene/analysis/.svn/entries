@@ -1,0 +1,67 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/lucene-1.3-final/src/test/org/apache/lucene/analysis
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+TestPerFieldAnalzyerWrapper.java
+file
+
+
+
+
+2007-01-03T20:45:29.749617Z
+7de2ac805aa02f32632eed552f204c86
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+ru
+dir
+
+TestAnalyzers.java
+file
+
+
+
+
+2007-01-03T20:45:29.789675Z
+91e387995f2494fadff1c970aa584457
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+TestStopAnalyzer.java
+file
+
+
+
+
+2007-01-03T20:45:29.869790Z
+f4ef0310a736b9c3d6053c1d387b38ae
+2007-01-03T15:32:02.531750Z
+2
+gr
+

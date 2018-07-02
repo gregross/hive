@@ -1,0 +1,54 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/JOpenChart/charting-0.94.lib/lib
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+servlet.jar
+file
+
+
+
+
+2007-01-03T20:48:13.765460Z
+671709351407f10b874be575f549fd09
+2007-01-03T15:32:02.531750Z
+2
+gr
+has-props
+
+jep.jar
+file
+
+
+
+
+2007-01-03T20:48:13.805518Z
+3354fbcb57f83e3e781922b17e83bd09
+2007-01-03T15:32:02.531750Z
+2
+gr
+has-props
+

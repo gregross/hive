@@ -1,0 +1,52 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/JOpenChart/charting-0.94.src/src/de/progra/charting/event
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+ChartDataModelListener.java
+file
+
+
+
+
+2007-01-03T23:29:50.208260Z
+269e08620631bcdae032dc9aaf936b2f
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+ChartDataModelEvent.java
+file
+
+
+
+
+2007-01-03T23:29:50.258332Z
+71a08f86bef74a81936490ca37683e1d
+2007-01-03T15:32:02.531750Z
+2
+gr
+

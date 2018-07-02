@@ -1,0 +1,52 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/lib/lucene-1.3-final/src/test/org/apache/lucene/util
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+TestBitVector.java
+file
+
+
+
+
+2007-01-03T20:45:34.406313Z
+fba81406ef8ddfa7ca2a52a87ec9eb40
+2007-01-03T15:32:02.531750Z
+2
+gr
+
+TestPriorityQueue.java
+file
+
+
+
+
+2007-01-03T20:45:34.446371Z
+b3101a3f2e8e276dfb115fca583075ff
+2007-01-03T15:32:02.531750Z
+2
+gr
+

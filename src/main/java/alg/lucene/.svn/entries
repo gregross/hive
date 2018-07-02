@@ -1,0 +1,52 @@
+8
+
+dir
+5
+file:///C:/gr/SvnRepository/trunk/source/alg/lucene
+file:///C:/gr/SvnRepository
+
+
+
+2007-01-04T01:05:35.820044Z
+4
+gr
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b224549a-08d4-1844-8b34-8589704da71c
+
+Indexer.java
+file
+
+
+
+
+2007-01-04T00:14:26.887136Z
+a3a0649ddb0004baa90fdca0f09439aa
+2007-01-04T01:05:35.820044Z
+4
+gr
+
+StemAnalyzer.java
+file
+
+
+
+
+2007-01-04T00:14:38.854344Z
+57fbc8a98d21fe0aa4b8fbd93a1a574d
+2007-01-04T01:05:35.820044Z
+4
+gr
+

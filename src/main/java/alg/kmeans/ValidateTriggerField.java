@@ -1,0 +1,174 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is HIVE .
+ *
+ * The Initial Developer of the Original Code is
+ * Greg Ross.
+ * Portions created by the Initial Developer are Copyright (C) 2000-2004
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s): Greg Ross <gr@dcs.gla.ac.uk>
+ 		   Matthew Chalmers <matthew@dcs.gla.ac.uk>
+ *                 Alistair Morrison <morrisaj@dcs.gla.ac.uk>
+ *		   Andrew Didsbury
+ *           		
+ *	
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+/**
+ * Algorithmic test bed
+ *
+ * ValidateTriggerField
+ *
+ * This class extends PlainDocument to ensure that the user can only
+ * enter valid values into the text box for determining the scalar
+ * threshold values for spring model converegence
+ *
+ *@author Greg Ross
+ */
+ 
+ package alg.kmeans;
+ 
+import javax.swing.*; 
+import javax.swing.text.*; 
+import java.awt.Toolkit;
+import java.text.*;
+import java.util.Locale;
+ 
+public class ValidateTriggerField extends PlainDocument implements java.io.Serializable
+{
+	// Versioning for serialisation
+	
+	static final long serialVersionUID = 50L;
+	
+	private Format format;
+	
+	public ValidateTriggerField(Format f) 
+	{
+        	format = f;
+	}
+	
+	public Format getFormat() 
+	{
+        	return format;
+	}
+	
+	public void insertString(int offs, String str, AttributeSet a) 
+        					throws BadLocationException 
+	{
+		char[] source;
+		
+		if (format != null)
+		{
+			// The field should only accept int/double numbers
+			
+        		String currentText = getText(0, getLength());
+			String beforeOffset = currentText.substring(0, offs);
+			String afterOffset = currentText.substring(offs, currentText.length());
+			String proposedResult = beforeOffset + str + afterOffset;
+			
+			boolean bContinue = true;
+			
+			// Allow only one decimal point to be entered
+			
+			if (currentText.indexOf(".") > -1)
+			{
+				if (str.equals("."))
+					bContinue = false;
+			}
+			
+			// Ensure that no other non-numeric characters can be entered
+			
+			source = str.toCharArray();
+			
+			if (bContinue)
+				if (!Character.isDigit(source[0]) && (!str.equals(".")))
+					bContinue = false;
+			
+			if (bContinue)
+			{
+				try 
+				{
+					format.parseObject(proposedResult);
+					super.insertString(offs, str, a);
+				} 
+				catch (ParseException e){}
+			}
+		}
+		else
+		{
+			// The field should only accept integer numbers
+			
+			source = str.toCharArray();
+			char[] result = new char[source.length];
+			int j = 0;
+			
+			for (int i = 0; i < result.length; i++) 
+			{
+				if (Character.isDigit(source[i]))
+					result[j++] = source[i];
+			}
+			
+			// Make sure that the number is not too large
+			
+			try
+			{
+				if (getLength() > 1)
+					Integer.parseInt(getText(0, getLength()));
+					
+				super.insertString(offs, new String(result, 0, j), a);
+			}
+			catch (java.lang.Exception e){}
+		}
+	}
+	
+	public void remove(int offs, int len) throws BadLocationException 
+	{
+		if (format != null)
+		{
+			// The field should only accept int/double numbers
+			
+        		String currentText = getText(0, getLength());
+			String beforeOffset = currentText.substring(0, offs);
+			String afterOffset = currentText.substring(len + offs,currentText.length());
+                        
+			String proposedResult = beforeOffset + afterOffset;
+			
+			try 
+			{
+				if (proposedResult.length() != 0)
+					format.parseObject(proposedResult);
+					
+				super.remove(offs, len);
+			} 
+			catch (ParseException e){}
+		}
+		else
+		{
+			super.remove(offs, len);
+		}
+	}
+}

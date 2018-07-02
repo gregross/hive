@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="test" name="JOpenChart">
+    <!-- change this property matching to your installation -->
+    <property name="servletlib" value="J:\entwicklung\netbeans3.4\modules\ext\servlet-2.2.jar"/>
+    
+    <!-- set global properties for this build -->
+    <property name="src" value="src"/>
+    <property name="build" value="bin"/>
+    <property name="dist" value="dist"/>
+    <property name="doc" value="doc"/>
+    <property name="lib" value="lib"/>
+
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+    </target>
+    <target depends="init" name="compile">
+        <!-- Compile the java code from ${src} into ${build} -->
+        <mkdir dir="${build}"/>
+        
+        <javac destdir="${build}" extdirs="${lib}" srcdir="${src}">
+            <classpath>
+                <pathelement location="${lib}/jep.jar"/>
+                <pathelement path="${java.class.path}"/>
+                <pathelement location="${servletlib}" />                
+            </classpath>
+        </javac>   
+    </target>
+	<target depends="compile" name="dist">
+        <mkdir dir="${dist}"/>
+        <!-- Put everything in ${build} into the charting-${DSTAMP}.jar file -->
+        <jar basedir="${build}" jarfile="${dist}/charting-${DSTAMP}.jar"/>
+	
+	<!-- Put everything in ${src} into the charting-${DSTAMP}.src.zip file -->
+        <zip basedir="." includes="${src}/**/*.java, ${src}/**/*.jsp, *.txt, build.xml, ${src}/**/*.xml" zipfile="${dist}/charting-${DSTAMP}.src.zip"/>
+	
+	<!-- Put everything in ${doc} into the charting-${DSTAMP}.doc.zip file -->
+        <zip basedir="." includes="${doc}/**" zipfile="${dist}/charting-${DSTAMP}.doc.zip"/>
+
+	<!-- Put everything in ${lib} into the charting-${DSTAMP}.lib.zip file -->        
+        <zip basedir="." includes="${lib}/**" zipfile="${dist}/charting-${DSTAMP}.lib.zip"/>
+	
+	<!-- Copy the compiled library to the lib directory to be included in the war file.-->
+        <copy file="${dist}/charting-${DSTAMP}.jar" todir="${lib}"/>
+	
+	<!-- Create the web archive as a war file. -->
+	<antcall target="webdist"></antcall>
+	
+	<!-- Remove the jar file in the library directory. -->
+	<delete file="${lib}/charting-${DSTAMP}.jar"/>
+    </target>
+    <target name="webdist" depends="exists-web-xml, echowarning" if="exists-web-xml.property">
+    	<!-- Compile the war file using the specified web.xml file, the JSP files and the ChartServlet file. All libs are included.-->
+    	<war warfile="${dist}/charting-${DSTAMP}.war" webxml="${src}/de/progra/charting/servlet/web.xml">            
+            <fileset dir="${src}/de/progra/charting/test" includes="*.jsp, *.html, *.htm"/>
+            <classes dir="${build}" includes="de/progra/charting/servlet/*"/>
+            <lib dir="${lib}" excludes="jpython.jar"/>
+        </war>
+    </target>
+    <target name="exists-web-xml">
+    	<!-- Check if the web.xml file is available which is necessary before creating the war file. -->
+    	<available file="${src}/de/progra/charting/servlet/web.xml" property="exists-web-xml.property"/>
+    </target>
+    <target name="echowarning" unless="exists-web-xml.property">
+	<echo message="** ${src}/de/progra/charting/servlet/web.xml : File Not Found. The war file will not be created."/>
+    </target>
+    <target name="clean">
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+    <target name="javadoc">        
+        <mkdir dir="${doc}"/>
+        <javadoc destdir="${doc}" sourcepath="${src}"/>
+    </target>
+    <target depends="dist" name="test">
+        <java classname="de.progra.charting.test.TestChart" 
+              classpath=".;${dist}/charting-${DSTAMP}.jar;${lib}/jep.jar"
+              fork="yes"/>
+        <echo message="** Several PNG images have been created for testing purposes in ${user.home}."/>
+    </target>
+	<target depends="dist" name="testGUI">
+        <java classname="de.progra.charting.test.GraphFrame" classpath=".;${dist}/charting-${DSTAMP}.jar;${lib}/jep.jar;" fork="yes"/>
+    </target>
+</project>
