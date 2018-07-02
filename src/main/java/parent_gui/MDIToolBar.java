@@ -120,14 +120,14 @@ public class MDIToolBar implements Runnable
 		// Add a JPanel to contain the draggable module reps.
 		
 		dragPaneAlg = new JPanel(new GridLayout(4, 0, 2, 2));
-		dragPaneAlg.setMaximumSize(new Dimension(500 , 100));
+		dragPaneAlg.setMaximumSize(new Dimension(800 , 150));
 		dragPaneAlg.setBorder(BorderFactory.createTitledBorder("Modules:"));
 		mdiForm.getToolBar().add(dragPaneAlg);
 		
 		// Add another JPanel to contain the draggable visual reps
 		
 		dragPaneVis = new JPanel(new GridLayout(3, 0, 2, 2));
-		dragPaneVis.setMaximumSize(new Dimension(500 , 100));
+		dragPaneVis.setMaximumSize(new Dimension(800 , 150));
 		dragPaneVis.setBorder(BorderFactory.createTitledBorder("Visualisations:"));
 		mdiForm.getToolBar().add(dragPaneVis);
 		

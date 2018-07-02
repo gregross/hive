@@ -3,3 +3,5 @@ documentation
 .DS_Store
 /target/
 hive.iml
+.idea
+.settings
