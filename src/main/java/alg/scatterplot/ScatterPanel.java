@@ -321,6 +321,7 @@ public class ScatterPanel extends JPanel implements Selectable,
 		
 		addMouseListener(this);
 		addPopupMenu();
+		this.setComponentPopupMenu(popup);
 		
 		setLayout(null);
 	}
