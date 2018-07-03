@@ -684,7 +684,7 @@ public class TextDisplay extends DefaultVisualModule implements
 	
 	public void mouseReleased(MouseEvent e)
 	{
-		if (e.isPopupTrigger())
+		if (e.getButton() == 3)
 		{
 			// Only show the popup menu for excluding terms from the word space
 			// if..

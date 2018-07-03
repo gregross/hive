@@ -321,7 +321,7 @@ public class ScatterPanel extends JPanel implements Selectable,
 		
 		addMouseListener(this);
 		addPopupMenu();
-		this.setComponentPopupMenu(popup);
+		//this.setComponentPopupMenu(popup);
 		
 		setLayout(null);
 	}
@@ -1833,7 +1833,7 @@ public class ScatterPanel extends JPanel implements Selectable,
 	*/
 	public void mouseReleased(MouseEvent e)
 	{
-		if (e.isPopupTrigger())
+		if (e.getButton() == 3)
 		{
 			xLabel = e.getX();
 			yLabel = e.getY();
